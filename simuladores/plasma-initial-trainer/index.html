@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="logo-tecnm.png" />
+    <link rel="preload" as="image" href="logo-it-nogales-v2.png" />
+    <link rel="preload" as="image" href="logo-it-mexicali-mark.png" />
+    <link rel="stylesheet" href="assets/index-vcBTFR9D.css" data-rsc-css-href="./assets/index-vcBTFR9D.css"
+        data-precedence="vite-rsc/importer-resources" />
+    <link rel="modulepreload" href="assets/layout-segment-context-CWUCuFX9.js" crossorigin="" />
+    <link rel="modulepreload" href="assets/rolldown-runtime-S-ySWqyJ.js" crossorigin="" />
+    <link rel="modulepreload" href="assets/index-Cgc4lanE.js" crossorigin="" />
+    <link rel="modulepreload" href="assets/framework-CXnKph_e.js" crossorigin="" />
+    <link rel="modulepreload" href="assets/page-BotI2oE4.js" crossorigin="" />
+    <title>Plasma Initial Trainer · ATP Etapa 3</title>
+    <meta name="description"
+        content="Simulador didáctico de plasma inicial para preparación, ciclo, diagnóstico y evaluación del proceso ATP." />
+    <link rel="shortcut icon" href="favicon.svg" />
+    <link rel="icon" href="favicon.svg" />
+    <meta name="codex-preview" content="development" />
+    <script>self.__VINEXT_RSC_PARAMS__ = {}</script>
+    <script>self.__VINEXT_RSC_NAV__ = { "pathname": "/", "searchParams": [] }</script>
+    <link rel="modulepreload" href="assets/index-Cgc4lanE.js" />
+</head>
+
+<body class="antialiased">
+    <main class="min-h-screen bg-[#eaf1f6] text-slate-950">
+        <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text"
+            aria-atomic="false" data-react-aria-top-layer="true"></section>
+        <header class="instrument-header">
+            <div
+                class="mx-auto flex max-w-[1520px] flex-col gap-4 px-4 py-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+                <div class="flex items-center gap-3">
+                    <div class="atom-mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <path
+                                d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z">
+                            </path>
+                            <path
+                                d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z">
+                            </path>
+                        </svg></div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h1>PLASMA INITIAL TRAINER</h1><span data-slot="badge" data-variant="default"
+                                class="inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3 [a&amp;]:hover:bg-primary/90 border border-fuchsia-300/30 bg-fuchsia-400/15 text-fuchsia-100">Etapa
+                                ATP 3</span>
+                        </div>
+                        <p>Limpieza y activación superficial antes de Die Attach</p>
+                    </div>
+                </div>
+                <div class="header-tools">
+                    <div class="institutional-brand" aria-label="Instituciones participantes">
+                        <div class="tecnm-brand"><img class="tecnm-logo" src="logo-tecnm.png" width="657" height="281"
+                                alt="Tecnológico Nacional de México" /></div><span class="brand-divider"
+                            aria-hidden="true"></span>
+                        <div class="campus-brand itn-brand"><img src="logo-it-nogales-v2.png" width="240" height="240"
+                                alt="Logotipo del Instituto Tecnológico de Nogales" /><span>Instituto
+                                Tecnológico<br />de Nogales</span></div><span class="brand-divider"
+                            aria-hidden="true"></span>
+                        <div class="campus-brand itm-brand"><img src="logo-it-mexicali-mark.png" width="440"
+                                height="696" alt="Logotipo del Instituto Tecnológico de Mexicali" /><span>Instituto
+                                Tecnológico<br />de Mexicali</span></div>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 lg:justify-end"><button type="button" role="combobox"
+                            aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"
+                            data-slot="select-trigger" data-size="default"
+                            class="flex w-fit items-center justify-between gap-2 rounded-md border px-3 py-2 text-sm whitespace-nowrap transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[placeholder]:text-muted-foreground data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 [&amp;_svg:not([class*=&#x27;text-&#x27;])]:text-muted-foreground h-11 min-w-40 border-white/20 bg-white/10 text-white shadow-none"><span
+                                data-slot="select-value" style="pointer-events:none"></span><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down size-4 opacity-50"
+                                aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></button><select aria-hidden="true" tabindex="-1"
+                            style="position:absolute;border:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;word-wrap:normal"></select><button
+                            data-slot="button" data-variant="outline" data-size="default"
+                            class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border shadow-xs dark:border-input dark:bg-input/30 dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 h-11 border-white/20 bg-white/10 text-white hover:bg-white/20 hover:text-white"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-rotate-ccw" aria-hidden="true">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                <path d="M3 3v5h5"></path>
+                            </svg> Reiniciar</button></div>
+                    <p class="mode-description">Ayudas, alarmas y criterios visibles durante la práctica.</p>
+                </div>
+            </div>
+            <div class="mx-auto max-w-[1520px] px-4 pb-5 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-bold text-cyan-100/80">
+                    <span>LOTE <!-- -->ATP-P3-001<!-- --> · <!-- -->Leadframe<!-- --> · <!-- -->160<!-- -->
+                        UNIDADES</span>
+                    <div class="flex gap-2"><span class="status-pill  tone-cyan"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-gauge" aria-hidden="true">
+                                <path d="m12 14 4-4"></path>
+                                <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                            </svg> <!-- -->LOAD</span><span class="status-pill  tone-violet"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-flame" aria-hidden="true">
+                                <path
+                                    d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4">
+                                </path>
+                            </svg> <!-- -->RF</span></div>
+                </div>
+                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" aria-valuetext="0%" role="progressbar"
+                    data-state="loading" data-value="0" data-max="100" data-slot="progress"
+                    class="relative w-full overflow-hidden rounded-full mt-3 h-1.5 bg-white/15 [&amp;_[data-slot=progress-indicator]]:bg-cyan-400">
+                    <div data-state="loading" data-value="0" data-max="100" data-slot="progress-indicator"
+                        class="h-full w-full flex-1 bg-primary transition-all" style="transform:translateX(-100%)">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="mx-auto grid max-w-[1520px] grid-cols-1 gap-3 px-4 py-4 sm:grid-cols-3 sm:px-6 lg:px-8">
+            <article class="metric-card" style="--metric-accent:#22d3ee">
+                <div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-layers" aria-hidden="true">
+                        <path
+                            d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z">
+                        </path>
+                        <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                        <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+                    </svg></div>
+                <div>
+                    <p>Carga</p><strong>160 unidades</strong><small>10 portadores</small>
+                </div>
+            </article>
+            <article class="metric-card" style="--metric-accent:#22c55e">
+                <div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-gauge" aria-hidden="true">
+                        <path d="m12 14 4-4"></path>
+                        <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                    </svg></div>
+                <div>
+                    <p>Receta</p><strong>96/100</strong><small>19.7 W·s/cm²</small>
+                </div>
+            </article>
+            <article class="metric-card" style="--metric-accent:#f59e0b">
+                <div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-shield-check" aria-hidden="true">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                        </path>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg></div>
+                <div>
+                    <p>Seguridad</p><strong>0/7</strong><small>Verificación pendiente</small>
+                </div>
+            </article>
+        </section>
+        <section class="mx-auto max-w-[1520px] px-4 pb-24 sm:px-6 lg:px-8 lg:pb-12">
+            <div dir="ltr" data-orientation="horizontal" data-slot="tabs"
+                class="group/tabs flex data-[orientation=horizontal]:flex-col gap-0">
+                <div class="tab-shell">
+                    <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" data-variant="line"
+                        class="group/tabs-list inline-flex w-fit items-center justify-center rounded-lg text-muted-foreground group-data-[orientation=horizontal]/tabs:h-9 group-data-[orientation=vertical]/tabs:h-fit group-data-[orientation=vertical]/tabs:flex-col data-[variant=line]:rounded-none gap-1 h-11 min-w-max bg-transparent p-0"
+                        tabindex="-1" data-orientation="horizontal" style="outline:none"><button type="button"
+                            role="tab" aria-selected="true" aria-controls="radix-_R_96_-content-setup"
+                            data-state="active" id="radix-_R_96_-trigger-setup" data-slot="tabs-trigger"
+                            class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100 min-w-40 px-4"
+                            tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-wrench" aria-hidden="true">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z">
+                                </path>
+                            </svg> Preparación</button><button type="button" role="tab" aria-selected="false"
+                            aria-controls="radix-_R_96_-content-cycle" data-state="inactive"
+                            id="radix-_R_96_-trigger-cycle" data-slot="tabs-trigger"
+                            class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100 min-w-40 px-4"
+                            tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-radio" aria-hidden="true">
+                                <path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path>
+                                <path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path>
+                                <path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path>
+                                <path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg> Ciclo de plasma</button><button type="button" role="tab" aria-selected="false"
+                            aria-controls="radix-_R_96_-content-results" data-state="inactive"
+                            id="radix-_R_96_-trigger-results" data-slot="tabs-trigger"
+                            class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100 min-w-36 px-4"
+                            tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-activity" aria-hidden="true">
+                                <path
+                                    d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
+                                </path>
+                            </svg> Resultados</button><button type="button" role="tab" aria-selected="false"
+                            aria-controls="radix-_R_96_-content-theory" data-state="inactive"
+                            id="radix-_R_96_-trigger-theory" data-slot="tabs-trigger"
+                            class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100 min-w-32 px-4"
+                            tabindex="-1" data-orientation="horizontal" data-radix-collection-item=""><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true">
+                                <path d="M12 5v16"></path>
+                                <path
+                                    d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z">
+                                </path>
+                            </svg> Teoría</button></div>
+                </div>
+                <div data-state="active" data-orientation="horizontal" role="tabpanel"
+                    aria-labelledby="radix-_R_96_-trigger-setup" id="radix-_R_96_-content-setup" tabindex="0"
+                    data-slot="tabs-content" class="flex-1 outline-none space-y-4" style="animation-duration:0s">
+                    <div class="setup-progress-banner">
+                        <div class="setup-progress-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"
+                                aria-hidden="true">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                </path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg></div>
+                        <div><strong>Para iniciar faltan <!-- -->7<!-- --> interlocks</strong><span>La receta ya está
+                                cargada. Puedes ir directamente a las verificaciones de seguridad.</span></div><button
+                            data-slot="button" data-variant="default" data-size="default"
+                            class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[&gt;svg]:px-3">Abrir
+                            interlocks <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></button>
+                    </div>
+                    <div class="grid gap-4 xl:grid-cols-[1.04fr_.96fr]">
+                        <div class="space-y-4">
+                            <section class="panel-card">
+                                <div class="panel-heading">
+                                    <div>
+                                        <p class="eyebrow">PASO 1</p>
+                                        <h2>Definir el lote y la carga</h2>
+                                    </div><span data-slot="badge" data-variant="secondary"
+                                        class="inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3 bg-secondary text-secondary-foreground [a&amp;]:hover:bg-secondary/90">160
+                                        unidades</span>
+                                </div>
+                                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><label
+                                        class="field-block"><span>Identificador de lote</span><input data-slot="input"
+                                            class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                            value="ATP-P3-001" /></label><label
+                                        class="field-block"><span>Portadores</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="1" max="100" step="1" value="10" /><small>pzas</small></div>
+                                    </label><label class="field-block"><span>Sitios por portador</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="1" max="100" step="1" value="16" /><small>sitios</small></div>
+                                    </label><label class="field-block"><span>Área expuesta</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="10" max="1200" step="5" value="160" /><small>cm²</small></div>
+                                    </label><label class="field-block"><span>Ángulo inicial</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="20" max="120" step="1" value="76" /><small>°</small></div>
+                                    </label></div>
+                            </section>
+                            <section class="panel-card">
+                                <div class="panel-heading">
+                                    <div>
+                                        <p class="eyebrow">PASO 2</p>
+                                        <h2>Seleccionar el soporte</h2>
+                                    </div><button data-slot="button" data-variant="outline" data-size="sm"
+                                        class="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-8 gap-1.5 rounded-md px-3 has-[&gt;svg]:px-2.5"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-refresh-cw" aria-hidden="true">
+                                            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                                            <path d="M21 3v5h-5"></path>
+                                            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                                            <path d="M8 16H3v5"></path>
+                                        </svg> Restaurar receta</button>
+                                </div>
+                                <div role="radiogroup" aria-required="false" dir="ltr" data-slot="radio-group"
+                                    class="grid gap-3 md:grid-cols-3" tabindex="-1" style="outline:none"><label
+                                        class="support-choice is-selected">
+                                        <div class="flex items-start justify-between"><span class="choice-icon"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-layers" aria-hidden="true">
+                                                    <path
+                                                        d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z">
+                                                    </path>
+                                                    <path
+                                                        d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12">
+                                                    </path>
+                                                    <path
+                                                        d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17">
+                                                    </path>
+                                                </svg></span><button type="button" role="radio" aria-checked="true"
+                                                data-state="checked" value="leadframe" data-slot="radio-group-item"
+                                                class="aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40"
+                                                tabindex="-1" data-radix-collection-item=""><span data-state="checked"
+                                                    data-slot="radio-group-indicator"
+                                                    class="relative flex items-center justify-center"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-circle absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2 fill-primary"
+                                                        aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                    </svg></span></button><input type="radio" aria-hidden="true"
+                                                tabindex="-1"
+                                                style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                                checked="" value="leadframe" /></div>
+                                        <strong>Leadframe</strong><small>Estructura metálica con paddle central y
+                                            terminales.</small>
+                                    </label><label class="support-choice ">
+                                        <div class="flex items-start justify-between"><span class="choice-icon"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-activity" aria-hidden="true">
+                                                    <path
+                                                        d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
+                                                    </path>
+                                                </svg></span><button type="button" role="radio" aria-checked="false"
+                                                data-state="unchecked" value="pcb" data-slot="radio-group-item"
+                                                class="aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40"
+                                                tabindex="-1" data-radix-collection-item=""></button><input type="radio"
+                                                aria-hidden="true" tabindex="-1"
+                                                style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                                value="pcb" /></div><strong>PCB / COB</strong><small>Tarjeta orgánica
+                                            con pads y máscara de soldadura.</small>
+                                    </label><label class="support-choice ">
+                                        <div class="flex items-start justify-between"><span class="choice-icon"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-beaker" aria-hidden="true">
+                                                    <path d="M4.5 3h15"></path>
+                                                    <path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3"></path>
+                                                    <path d="M6 14h12"></path>
+                                                </svg></span><button type="button" role="radio" aria-checked="false"
+                                                data-state="unchecked" value="ceramic" data-slot="radio-group-item"
+                                                class="aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40"
+                                                tabindex="-1" data-radix-collection-item=""></button><input type="radio"
+                                                aria-hidden="true" tabindex="-1"
+                                                style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                                value="ceramic" /></div><strong>Sustrato
+                                            cerámico</strong><small>Sustrato rígido de alúmina o LTCC para alta
+                                            estabilidad.</small>
+                                    </label></div>
+                                <div class="mt-4 grid gap-4 sm:grid-cols-2"><label class="field-block"><span>Material
+                                            base</span><button type="button" role="combobox" aria-expanded="false"
+                                            aria-autocomplete="none" dir="ltr" data-state="closed"
+                                            data-slot="select-trigger" data-size="default"
+                                            class="flex items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[placeholder]:text-muted-foreground data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 [&amp;_svg:not([class*=&#x27;text-&#x27;])]:text-muted-foreground w-full"><span
+                                                data-slot="select-value" style="pointer-events:none"></span><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chevron-down size-4 opacity-50" aria-hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg></button><select aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;border:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;word-wrap:normal"></select></label><label
+                                        class="field-block"><span>Acabado superficial</span><button type="button"
+                                            role="combobox" aria-expanded="false" aria-autocomplete="none" dir="ltr"
+                                            data-state="closed" data-slot="select-trigger" data-size="default"
+                                            class="flex items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[placeholder]:text-muted-foreground data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 [&amp;_svg:not([class*=&#x27;text-&#x27;])]:text-muted-foreground w-full"><span
+                                                data-slot="select-value" style="pointer-events:none"></span><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chevron-down size-4 opacity-50" aria-hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg></button><select aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;border:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;word-wrap:normal"></select></label>
+                                </div>
+                            </section>
+                            <section class="panel-card">
+                                <div class="panel-heading">
+                                    <div>
+                                        <p class="eyebrow">PASO 3</p>
+                                        <h2>Construir la receta</h2>
+                                    </div><span data-slot="badge" data-variant="secondary"
+                                        class="inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3 bg-secondary text-secondary-foreground [a&amp;]:hover:bg-secondary/90">Puntaje
+                                        96/100</span>
+                                </div>
+                                <div class="gas-mixer">
+                                    <div class="mixer-header">
+                                        <div><span>MEZCLA DE PROCESO</span><strong class="gas-ok">100<!-- -->%</strong>
+                                        </div><small>Las tres fracciones deben sumar 100%</small>
+                                    </div>
+                                    <div class="grid gap-4 sm:grid-cols-3"><label
+                                            class="field-block"><span>Oxígeno</span>
+                                            <div class="number-wrap"><input type="number" data-slot="input"
+                                                    class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                    min="0" max="100" step="5" value="20" /><small>% O₂</small></div>
+                                        </label><label class="field-block"><span>Argón</span>
+                                            <div class="number-wrap"><input type="number" data-slot="input"
+                                                    class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                    min="0" max="100" step="5" value="80" /><small>% Ar</small></div>
+                                        </label><label class="field-block"><span>Nitrógeno</span>
+                                            <div class="number-wrap"><input type="number" data-slot="input"
+                                                    class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                    min="0" max="100" step="5" value="0" /><small>% N₂</small></div>
+                                        </label></div>
+                                    <div class="gas-bar"><span class="o2" style="width:20%"></span><span class="ar"
+                                            style="width:80%"></span><span class="n2" style="width:0%"></span></div>
+                                    <div class="gas-legend"><span><i class="o2"></i> O₂</span><span><i class="ar"></i>
+                                            Ar</span><span><i class="n2"></i> N₂</span></div>
+                                </div>
+                                <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><label
+                                        class="field-block"><span>Potencia RF</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="5" max="250" step="5" value="70" /><small>W</small></div>
+                                    </label><label class="field-block"><span>Presión</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="0.05" max="2" step="0.05" value="0.35" /><small>mbar</small></div>
+                                    </label><label class="field-block"><span>Flujo total</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="5" max="200" step="5" value="60" /><small>sccm</small></div>
+                                    </label><label class="field-block"><span>Tiempo de plasma</span>
+                                        <div class="number-wrap"><input type="number" data-slot="input"
+                                                class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                                min="5" max="240" step="5" value="45" /><small>s</small></div>
+                                    </label></div>
+                                <div class="recipe-assessment is-ready">
+                                    <div class="score-block"><strong>96</strong><span>Compatibilidad<br />de
+                                            receta</span></div>
+                                    <div class="recipe-details">
+                                        <div class="recipe-inline"><span>Dosis normalizada <strong>19.7<!-- -->
+                                                    W·s/cm²</strong></span><span>Banda <strong>objetivo</strong></span>
+                                        </div>
+                                        <p class="ready-line"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-circle-check" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="m9 12 2 2 4-4"></path>
+                                            </svg> Todos los parámetros están dentro de la ventana didáctica.</p>
+                                        <small>Ventana: <!-- -->45<!-- -->–<!-- -->95<!-- --> W ·
+                                            <!-- -->0.2<!-- -->–<!-- -->0.55<!-- --> mbar ·
+                                            <!-- -->35<!-- -->–<!-- -->85<!-- --> sccm ·
+                                            <!-- -->25<!-- -->–<!-- -->75<!-- --> s</small>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="space-y-4">
+                            <section id="plasma-interlocks" tabindex="-1" class="panel-card interlock-panel">
+                                <div class="panel-heading">
+                                    <div>
+                                        <p class="eyebrow">PASO 4</p>
+                                        <h2>Interlocks y escenario</h2>
+                                    </div><span data-slot="badge" data-variant="secondary"
+                                        class="inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3 bg-secondary text-secondary-foreground [a&amp;]:hover:bg-secondary/90">0/7</span>
+                                </div>
+                                <div class="interlock-progress">
+                                    <div><strong>7 verificaciones pendientes</strong><span>Marca cada punto después de
+                                            comprobarlo.</span></div>
+                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" aria-valuetext="0%"
+                                        role="progressbar" data-state="loading" data-value="0" data-max="100"
+                                        data-slot="progress"
+                                        class="relative h-2 w-full overflow-hidden rounded-full bg-primary/20">
+                                        <div data-state="loading" data-value="0" data-max="100"
+                                            data-slot="progress-indicator"
+                                            class="h-full w-full flex-1 bg-primary transition-all"
+                                            style="transform:translateX(-100%)"></div>
+                                    </div>
+                                </div>
+                                <div class="grid gap-2"><label class="interlock-item "><button type="button"
+                                            role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                            data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>EPP y protección ocular verificados</span></label><label
+                                        class="interlock-item "><button type="button" role="checkbox"
+                                            aria-checked="false" data-state="unchecked" value="on" data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>Control ESD activo y aterrizado</span></label><label
+                                        class="interlock-item "><button type="button" role="checkbox"
+                                            aria-checked="false" data-state="unchecked" value="on" data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>Puerta, sello y cámara sin
+                                            obstrucciones</span></label><label class="interlock-item "><button
+                                            type="button" role="checkbox" aria-checked="false" data-state="unchecked"
+                                            value="on" data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>Cilindros, etiquetas y líneas de gas
+                                            confirmados</span></label><label class="interlock-item "><button
+                                            type="button" role="checkbox" aria-checked="false" data-state="unchecked"
+                                            value="on" data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>Extracción y ventilación disponibles</span></label><label
+                                        class="interlock-item "><button type="button" role="checkbox"
+                                            aria-checked="false" data-state="unchecked" value="on" data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>Cámara limpia, seca y sin material
+                                            incompatible</span></label><label class="interlock-item "><button
+                                            type="button" role="checkbox" aria-checked="false" data-state="unchecked"
+                                            value="on" data-slot="checkbox"
+                                            class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary"></button><input
+                                            type="checkbox" aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;pointer-events:none;opacity:0;margin:0;transform:translateX(-100%)"
+                                            value="on" /><span>Viajero, lote y receta autorizada
+                                            cotejados</span></label></div>
+                                <div class="mt-4"><label class="field-block"><span>Escenario de
+                                            entrenamiento</span><button type="button" role="combobox"
+                                            aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"
+                                            data-slot="select-trigger" data-size="default"
+                                            class="flex items-center justify-between gap-2 rounded-md border border-input bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[placeholder]:text-muted-foreground data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 [&amp;_svg:not([class*=&#x27;text-&#x27;])]:text-muted-foreground w-full"><span
+                                                data-slot="select-value" style="pointer-events:none"></span><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chevron-down size-4 opacity-50" aria-hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg></button><select aria-hidden="true" tabindex="-1"
+                                            style="position:absolute;border:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;word-wrap:normal"></select></label>
+                                </div><button data-slot="button" data-variant="default" data-size="lg"
+                                    class="inline-flex shrink-0 items-center justify-center gap-2 font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 text-primary-foreground rounded-md px-6 has-[&gt;svg]:px-4 mt-4 h-12 w-full bg-[#0f7893] text-base hover:bg-[#0b6077]"
+                                    disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                        </path>
+                                    </svg> <!-- -->Completa 7 interlocks</button>
+                                <p class="mt-3 text-center text-xs text-slate-500">La mezcla O₂ + Ar + N₂ también debe
+                                    sumar 100%.</p>
+                            </section>
+                            <section class="panel-card sticky-card">
+                                <div class="panel-heading">
+                                    <div>
+                                        <p class="eyebrow">PREVISUALIZACIÓN</p>
+                                        <h2>Cámara y carga</h2>
+                                    </div><span data-slot="badge" data-variant="secondary"
+                                        class="inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3 bg-secondary text-secondary-foreground [a&amp;]:hover:bg-secondary/90">Modelo
+                                        interactivo</span>
+                                </div>
+                                <section class="chamber-stage phase-load"
+                                    aria-label="Representación didáctica de la cámara de plasma">
+                                    <div class="stage-topline"><span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-lock-keyhole" aria-hidden="true">
+                                                <circle cx="12" cy="16" r="1"></circle>
+                                                <rect x="3" y="10" width="18" height="12" rx="2"></rect>
+                                                <path d="M7 10V7a5 5 0 0 1 10 0v3"></path>
+                                            </svg> CÁMARA P-03</span><span class=""><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fan"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z">
+                                                </path>
+                                                <path d="M12 12v.01"></path>
+                                            </svg> VACÍO</span><span class=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-radio" aria-hidden="true">
+                                                <path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path>
+                                                <path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path>
+                                                <path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path>
+                                                <path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path>
+                                                <circle cx="12" cy="12" r="2"></circle>
+                                            </svg> RF</span></div>
+                                    <div class="gas-manifold" aria-label="Mezcla de gases"><span class="gas-o2"
+                                            style="--gas-share:20%">O₂ <!-- -->20<!-- -->%</span><span class="gas-ar"
+                                            style="--gas-share:80%">Ar <!-- -->80<!-- -->%</span><span class="gas-n2"
+                                            style="--gas-share:0%">N₂ <!-- -->0<!-- -->%</span><i class="gas-flow"></i>
+                                    </div>
+                                    <div class="chamber-shell">
+                                        <div class="chamber-bolts">
+                                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                                        </div>
+                                        <div class="chamber-window">
+                                            <div class="electrode electrode-top"><span>RF</span></div>
+                                            <div class="plasma-cloud"><i style="--particle:0"></i><i
+                                                    style="--particle:1"></i><i style="--particle:2"></i><i
+                                                    style="--particle:3"></i><i style="--particle:4"></i><i
+                                                    style="--particle:5"></i><i style="--particle:6"></i><i
+                                                    style="--particle:7"></i><i style="--particle:8"></i><i
+                                                    style="--particle:9"></i><i style="--particle:10"></i><i
+                                                    style="--particle:11"></i><i style="--particle:12"></i><i
+                                                    style="--particle:13"></i><i style="--particle:14"></i><i
+                                                    style="--particle:15"></i><i style="--particle:16"></i><i
+                                                    style="--particle:17"></i><i style="--particle:18"></i><i
+                                                    style="--particle:19"></i><i style="--particle:20"></i><i
+                                                    style="--particle:21"></i><i style="--particle:22"></i><i
+                                                    style="--particle:23"></i><i style="--particle:24"></i><i
+                                                    style="--particle:25"></i><i style="--particle:26"></i><i
+                                                    style="--particle:27"></i></div>
+                                            <div class="tray-rail">
+                                                <div class="leadframe-tray" aria-label="Bandeja con leadframes">
+                                                    <span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="electrode electrode-bottom"></div>
+                                            <div class="vacuum-port"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-wind" aria-hidden="true">
+                                                    <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                                                    <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                                                    <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="door-latch"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-door-closed" aria-hidden="true">
+                                                <path d="M10 12h.01"></path>
+                                                <path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"></path>
+                                                <path d="M2 20h20"></path>
+                                            </svg></div>
+                                    </div>
+                                    <div class="stage-readouts">
+                                        <div class="machine-readout"><span>PRESIÓN</span><strong>1000.000 mbar</strong>
+                                        </div>
+                                        <div class="machine-readout"><span>FLUJO</span><strong>0 sccm</strong></div>
+                                        <div class="machine-readout"><span>POTENCIA RF</span><strong>0 W</strong></div>
+                                        <div class="machine-readout"><span>TIEMPO</span><strong>0 s</strong></div>
+                                    </div>
+                                </section>
+                                <div class="didactic-note"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-atom" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <path
+                                            d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z">
+                                        </path>
+                                        <path
+                                            d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z">
+                                        </path>
+                                    </svg>
+                                    <p><strong>Objetivo de la etapa</strong><span>Remover contaminación orgánica y
+                                            elevar la energía superficial para favorecer el pegado del dado.</span></p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
+                    aria-labelledby="radix-_R_96_-trigger-cycle" hidden="" id="radix-_R_96_-content-cycle" tabindex="0"
+                    data-slot="tabs-content" class="flex-1 outline-none space-y-4"></div>
+                <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
+                    aria-labelledby="radix-_R_96_-trigger-results" hidden="" id="radix-_R_96_-content-results"
+                    tabindex="0" data-slot="tabs-content" class="flex-1 outline-none space-y-4"></div>
+                <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
+                    aria-labelledby="radix-_R_96_-trigger-theory" hidden="" id="radix-_R_96_-content-theory"
+                    tabindex="0" data-slot="tabs-content" class="flex-1 outline-none space-y-4"></div>
+            </div>
+        </section>
+        <footer>
+            <div><strong>ATP · Etapa 3</strong><span>Simulador didáctico de plasma inicial</span></div>
+            <p>Los parámetros son ejemplos educativos. La operación real debe seguir el manual del equipo, la receta
+                validada, EHS y el sistema de calidad de la institución.</p>
+        </footer>
+    </main>
+    <script id="_R_">import("./assets/index-Cgc4lanE.js")</script>
+</body>
+
+</html>
+<script>self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || []; self.__VINEXT_RSC_CHUNKS__.push("2:I[\"8c0f216c4604\",[],\"Children\",1]\n3:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n4:I[\"8c0f216c4604\",[],\"Slot\",1]\n5:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n:HL[\"./assets/index-vcBTFR9D.css\",\"style\"]\n0:{\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"page:/\":\"$L1\",\"layout:/\":[[[[\"$\",\"link\",\"css:./assets/index-vcBTFR9D.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"./assets/index-vcBTFR9D.css\",\"data-rsc-css-href\":\"./assets/index-vcBTFR9D.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"es-MX\",\"children\":[\"$\",\"body\",null,{\"className\":\"antialiased\",\"children\":[\"$\",\"$L2\",null,{}]}]}]],null],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Plasma Initial Trainer · ATP Etapa 3\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Simulador didáctico de plasma inicial para preparación, ciclo, diagnóstico y evaluación del proceso ATP.\"}],[\"$\",\"link\",\"2\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"meta\",\"4\",{\"name\":\"codex-preview\",\"content\":\"development\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L4\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$L3\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L4\",null,{\"id\":\"page:/\"}]}]}]}]}]],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:4uhn5s1wvoptc\",\"deploymentVersion\":\"4d1443ca-dbe6-48d2-8055-dfe222f7421c\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n")</script>
+<script>self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || []; self.__VINEXT_RSC_CHUNKS__.push("6:I[\"6efdf509a785\",[],\"default\",1]\n1:[\"$\",\"$L6\",null,{\"params\":\"$@7\",\"searchParams\":\"$@8\"}]\n")</script>
+<script>self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || []; self.__VINEXT_RSC_CHUNKS__.push("7:{}\n8:{}\n")</script>
+<script>self.__VINEXT_RSC_DONE__ = true</script>

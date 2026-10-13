@@ -1,0 +1,9 @@
+.grid article { overflow: hidden; }
+.module-visual { position: relative; margin: -23px -23px 20px; background: #062536; border-bottom: 1px solid #123e53; }
+.module-visual img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; transition: transform .3s ease; }
+.module-visual figcaption { position: absolute; bottom: 13px; left: 17px; padding: 7px 10px; border: 1px solid #8bd9e467; border-radius: 6px; color: #fff; background: #062536e8; font: 700 12px/1.4 Arial, sans-serif; letter-spacing: .1em; }
+.grid article:hover .module-visual img { transform: scale(1.025); }
+.module-visual { overflow: hidden; }
+.grid .card-top .number { display: none; }
+.grid h3 { margin-top: 9px; }
+@media (prefers-reduced-motion: reduce) { .module-visual img { transition: none; } .grid article:hover .module-visual img { transform: none; } }

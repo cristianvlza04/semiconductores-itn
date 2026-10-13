@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería en Semiconductores | ITN</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+        /* Paleta de colores ITN (Azul y Naranja) */
+        :root {
+            --tec-blue: #1b396a;
+            --tec-accent: #e57200; 
+        }
+        
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow-x: hidden; }
+        
+        .navbar-custom { background-color: var(--tec-blue); }
+
+        .hero-section {
+            background: linear-gradient(rgba(27, 57, 106, 0.88), rgba(27, 57, 106, 0.88)), 
+                        url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            padding: 100px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+
+        .btn-accent {
+            background-color: var(--tec-accent);
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .btn-accent:hover {
+            background-color: #cc6500;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .section-title {
+            color: var(--tec-blue);
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        /* Estilos de la tarjeta en el carrusel y Hover Interactivo */
+        .research-card {
+            border-top: 5px solid var(--tec-accent);
+            border-radius: 15px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        
+        .research-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+            border-top: 5px solid var(--tec-blue);
+        }
+
+        /* Ajustes para carrusel */
+        .carousel-inner { padding: 20px 0 40px 0; }
+
+        /* Contenedor responsivo Aula Virtual */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; 
+            border-radius: 0 0 12px 12px;
+        }
+        
+        .iframe-container iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+        }
+
+        /* CLASES PARA ANIMACIONES (SCROLL REVEAL) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Nueva sección llamativa de simuladores */
+        .cta-simuladores {
+            background: linear-gradient(135deg, var(--tec-blue), #2a5298);
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="./simuladores/tecnm.png" alt="Logo TecNM" height="40" class="me-2 bg-white rounded p-1"> TecNM | Nogales
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#objetivo">Objetivo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil de Egreso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologia">Aula Virtual</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-warning" href="./simuladores/index.html">Simuladores ATP <i class="bi bi-box-arrow-up-right ms-1" style="font-size: 0.8em;"></i></a></li>
+                </ul>
+                <a href="https://nogales.tecnm.mx/reticulas/Semiconductores/Reticulasemiconductores.pdf" target="_blank" class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0">
+                    <i class="bi bi-file-pdf me-1"></i> Ver Retícula
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-lg-start reveal active">
+        <div class="container pb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 fs-6 shadow-sm">Nueva Oferta Educativa</span>
+                    <h1 class="display-4 fw-bold mb-4">Ingeniería en Semiconductores</h1>
+                    <p class="lead mb-5 text-light opacity-75">
+                        Formamos ingenieros competentes en el diseño y síntesis de materiales semiconductores, componentes electrónicos y circuitos integrados a través de la investigación y desarrollo tecnológico.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="https://nogales.tecnm.mx/reticulas/Semiconductores/Reticulasemiconductores.pdf" target="_blank" class="btn btn-accent btn-lg px-4 py-3 rounded-pill shadow">
+                            Descargar Retícula <i class="bi bi-download ms-2"></i>
+                        </a>
+                        <a href="#tecnologia" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill">
+                            Explorar Aula 3D <i class="bi bi-vr ms-2"></i>
+                        </a>
+                        <a href="./simuladores/index.html" class="btn btn-light text-primary fw-bold btn-lg px-4 py-3 rounded-pill shadow-lg">
+                            Simuladores ATP <i class="bi bi-laptop ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivo y Perfil de Ingreso -->
+    <section id="objetivo" class="py-5">
+        <div class="container py-4">
+            
+            <div class="row mb-5 reveal">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm" style="border-left: 5px solid var(--tec-accent); background-color: #f8f9fa;">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="section-title mb-4"><i class="bi bi-bullseye text-primary me-2"></i>Objetivo General</h2>
+                            <p class="lead text-dark fst-italic mb-0" style="line-height: 1.8;">
+                                "Formar ingenieros competentes en el diseño y síntesis de materiales semiconductores, componentes electrónicos y circuitos integrados a través de la investigación y desarrollo tecnológico, que coadyuven al fortalecimiento de la industria estratégica de los semiconductores de nuestra nación..."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-4 reveal">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="fw-bold text-dark mb-4"><i class="bi bi-person-check-fill text-success me-2"></i> Perfil de Ingreso</h3>
+                    <p class="text-muted mb-4">Los aspirantes a ingresar en esta ingeniería deberán tener:</p>
+                    <ul class="list-group list-group-flush border-0 shadow-sm rounded-3">
+                        <li class="list-group-item bg-light border-0 mb-2 rounded py-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i> Capacidad de análisis y síntesis.
+                        </li>
+                        <li class="list-group-item bg-light border-0 mb-2 rounded py-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i> Pensamiento matemático.
+                        </li>
+                        <li class="list-group-item bg-light border-0 mb-2 rounded py-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i> Comprensión lectora con capacidad para identificar y aplicar elementos de la lengua.
+                        </li>
+                        <li class="list-group-item bg-light border-0 mb-2 rounded py-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i> Habilidad para resolver problemas en matemáticas y física.
+                        </li>
+                        <li class="list-group-item bg-light border-0 rounded py-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i> Actitud crítica.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudiante trabajando en laboratorio" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Perfil de Egreso (Carrusel) -->
+    <section id="perfil" class="py-5 bg-light">
+        <div class="container py-4 reveal">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Perfil de Egreso</h2>
+                <p class="text-muted">Al concluir el programa, nuestros ingenieros son capaces de:</p>
+            </div>
+            
+            <div id="carruselEgreso" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Tarjeta 1 -->
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-cpu"></i></div>
+                                    <h4 class="card-title fw-bold">1. Diseño y Síntesis</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Diseña y sintetiza materiales semiconductores y circuitos integrados para la solución de problemas en el entorno profesional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-lightbulb"></i></div>
+                                    <h4 class="card-title fw-bold">2. Innovación y Tecnología</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Innova y aplica tecnología utilizando métodos y procedimientos en proyectos de ingeniería en semiconductores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-graph-up-arrow"></i></div>
+                                    <h4 class="card-title fw-bold">3. Mejora Continua</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Promueve y participa en la mejora continua, aplicando normas y estándares, con sentido ético profesional e incluyente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 4 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-gear-wide-connected"></i></div>
+                                    <h4 class="card-title fw-bold">4. Optimización de Procesos</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Gestiona las actividades y recursos necesarios para la optimización de procesos en la fabricación de semiconductores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 5 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-people"></i></div>
+                                    <h4 class="card-title fw-bold">5. Ética y Comunicación</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Aplica los principios éticos y se comunica de manera efectiva en sus relaciones interpersonales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 6 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-rocket"></i></div>
+                                    <h4 class="card-title fw-bold">6. Liderazgo e Inclusión</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Ser creativo, crítico, emprendedor y comprometido con su actualización profesional, liderando equipos diversos e inclusivos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 7 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-search"></i></div>
+                                    <h4 class="card-title fw-bold">7. Investigación y Desarrollo</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Fundamenta, realiza y colabora en proyectos de investigación para desarrollar soluciones a problemas de ingeniería complejos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 8 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-6">
+                                <div class="card border-0 shadow-lg research-card h-100 p-4 text-center">
+                                    <div class="display-4 mb-3" style="color: var(--tec-blue);"><i class="bi bi-display"></i></div>
+                                    <h4 class="card-title fw-bold">8. Modelado y Simulación</h4>
+                                    <p class="card-text text-muted fs-5 mt-3">Modela y simula sistemas electrónicos para predecir su comportamiento empleando conocimientos de las matemáticas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselEgreso" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselEgreso" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN CALL-TO-ACTION: SIMULADORES -->
+    <section class="cta-simuladores py-5 text-white">
+        <div class="container py-5 text-center reveal">
+            <i class="bi bi-cpu display-1 text-warning mb-3 d-inline-block shadow-sm rounded-circle bg-dark p-3" style="--bs-bg-opacity: .3;"></i>
+            <h2 class="display-5 fw-bold mb-4">Laboratorio Virtual de Semiconductores</h2>
+            <p class="lead mb-5 px-lg-5 text-white-50">
+                Lleva la teoría a la práctica. Hemos desarrollado un ecosistema completo de simuladores interactivos donde podrás ejecutar los procesos de ensamble, prueba y encapsulado ATP (Assembly, Test & Packaging).
+            </p>
+            <a href="./simuladores/index.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill shadow-lg text-dark fw-bold" style="letter-spacing: 1px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Entrar a los Simuladores </i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tecnología: Aula Virtual -->
+    <section id="tecnologia" class="py-5">
+        <div class="container py-4 reveal">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Infraestructura Tecnológica</h2>
+                <p class="text-muted">Explora nuestras instalaciones en 3D preparadas para la nueva era.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-lg research-card" style="min-height: auto;">
+                        <div class="card-header bg-white fw-bold py-3 text-center fs-5 border-bottom-0">
+                            <i class="bi bi-vr text-primary me-2"></i> Recorrido Virtual 360°
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="iframe-container">
+                                <iframe src="https://twinmotion.unrealengine.com/panorama/HXkDoZ9KBDRaMgYi" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Institucional con el Logo de Nogales -->
+    <footer class="navbar-custom text-light py-5 mt-2">
+        <div class="container text-center reveal">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="./simuladores/nogales.png" alt="Escudo Nogales" height="60" class="me-3 bg-white rounded-circle p-1 shadow">
+                <h4 class="fw-bold mb-0">Instituto Tecnológico de Nogales</h4>
+            </div>
+            <p class="mb-1 text-white-50">Avenida Instituto Tecnológico #911, Granja, C.P. 84065</p>
+            <p class="mb-4 text-white-50">Email: dir_nogales@tecnm.mx | Conmutador: 52 631159001</p>
+            <hr class="border-secondary mb-4">
+            <p class="mb-0 small text-white-50">&copy; 2026 TecNM - Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para animaciones On-Scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach((element) => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
